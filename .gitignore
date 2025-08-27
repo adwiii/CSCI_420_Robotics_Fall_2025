@@ -2,5 +2,4 @@ _site/
 .idea/
 .bundle/
 .sass-cache/
-node_modules/
 vendor/
