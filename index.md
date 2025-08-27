@@ -7,6 +7,7 @@ layout: page
 # Team
  
 * Trey Woodlief - Instructor, woodlief@wm.edu
+* Fahmida Hossain - Teaching Assistant, fhossain@wm.edu
 
 
 # Goal and Scope
@@ -19,6 +20,7 @@ Developing software for robot systems is challenging as they must sense, represe
 
 # Office Hours
 * Trey Woodlief:  Tuesdays and Thursdays 2pm-3pm, Wednesdays 5pm-6pm, McGlothlin-Street Hall 135 and by appointment 
+* Fahmida Hossain: TBD
 
 # Prerequisites
 CSCI 303 or CSCI 304 or instructor permission.
@@ -59,7 +61,7 @@ CSCI 303 or CSCI 304 or instructor permission.
 * If you feel sick, let me know and stay home. We will work on a temporary solution. 
 * Students must fully comply with all the provisions of the [William & Mary Honor Code](https://www.wm.edu/offices/communityvalues/sarp/honorcodeandcouncils/honorcode/).
     * All quizzes are taken live during class time. Collaboration or use of any outside materials is strictly prohibited. 
-      * If you anticipate needing to miss class when a quiz is scheduled, let me know as early as possible and we will schedule a makeup quiz during office hours. 
+      * If you anticipate needing to miss class when a quiz is scheduled, let me know as early as possible, and we will schedule a makeup quiz during office hours. 
     * The Labs and Final Project are individual assignments unless otherwise noted in the assignment. 
       * Students may use any outside resources in completing these assignments, including using generative AI and discussing with classmates, with the following exceptions:
         * Students may not share code with other students.
@@ -67,6 +69,7 @@ CSCI 303 or CSCI 304 or instructor permission.
       * Each student must be able to *fully explain* all code and implementation details of their solution as though the student had written all code from scratch. If generative AI helped you to outline a solution or fix a bug, you must be able to fully explain the current working version of the code at a level of understanding that demonstrates command of course concepts and a familiarity with the tools and techniques of the labs.
       * These assignments will be turned in by a live demonstration of the solution to the instructor during Wednesday class sessions or office hours.
       * ***A correct and functional implementation that you cannot explain how it functions and why it relates to course concepts will result in at most half credit.***
+    * See the course posting in Blackboard for instructions and submission of the video assignment.
 * Labs will earn full credit if presented within one week after they are due, 50% credit within two weeks, and 5% after two weeks. For example, Lab 1 will be assigned on Wednesday, September 3rd and can be presented for full credit any time through the end of office hours on September 10th, for 50% credit through the end of office hours on September 17th, and will receive 5% credit afterward. Labs can be turned in during any lab period or during instructor office hours.
 * Depending on the class size only a sample of the students will be graded on a weekly basis.  
 * Students are responsible for all missed work. It is also the absentee's responsibility to get all missing notes or materials.
