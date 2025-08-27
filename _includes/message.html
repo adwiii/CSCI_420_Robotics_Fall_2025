@@ -1,0 +1,13 @@
+<div x-data="{visible: true}" markdown="0">
+    <article class="message {{ include.status | default: 'is-warning' }}" x-show.transition.duration.300ms="visible">
+        {% if include.dismissable %}
+            <button class="delete" x-on:click="visible = false"></button>
+        {% endif %}
+        <div class="message-header">
+            {{ include.header | markdownify }}
+        </div>
+        <div class="message-body">
+            {{ include.body | markdownify }}
+          </div>
+    </article>
+</div>

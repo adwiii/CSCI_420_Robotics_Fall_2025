@@ -1,0 +1,58 @@
+# Site Settings
+title: CSCI 420
+tagline: CSCI 420
+email: woodlief@wm.edu
+description: William and Mary's Robotics undergraduate course.
+baseurl: "/CSCI_420_Robotics_Fall_2025"
+url: https://treywoodlief.com
+repository: "CSCI_420_Robotics_Fall_2025"
+permalink: pretty
+favicon: /favicon.ico
+team: /team
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - kramdown-parser-gfm
+
+exclude: 
+  - Gemfile
+  - clean-theme.gemspec
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+livereload: true
+
+sass:
+  style: compressed
+  source_dir: _sass
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      show_sidebar: true
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Trey Woodlief"
+      layout: post
+      image: https://via.placeholder.com/1200x800
+
+collections:
+  products: 
+    output: true
+    layout: product
+    image: https://via.placeholder.com/800x600

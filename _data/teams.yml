@@ -1,0 +1,13 @@
+- tier_name: Current Team
+  size: large
+  description: |-
+    
+  teams:
+    - name: Trey Woodlief
+      description: Instructor
+      email: woodlief@wm.edu
+      image: trey.png
+    - name: Fahmida Hossain
+      description: Teaching Assistant
+      email: fhossain@wm.edu
+      image: placeholder.png
