@@ -19,7 +19,7 @@ Developing software for robot systems is challenging as they must sense, represe
 * Classes will be in person at John E. Boswell Hall 341, with most lectures on Mondays and labs on Wednesdays
 
 # Office Hours
-* Trey Woodlief:  Tuesdays and Thursdays 2pm-3pm, Wednesdays 5pm-6pm, McGlothlin-Street Hall 135 and by appointment 
+* Trey Woodlief: Tuesdays 10am-11am, Wednesdays 5pm-6pm, and Thursdays 2pm-3pm at McGlothlin-Street Hall 135 and by appointment.
 * Fahmida Hossain: TBD
 
 # Prerequisites
@@ -30,7 +30,7 @@ CSCI 303 or CSCI 304 or instructor permission.
 
 | Week | Lecture Date | Lecture Topic                       | Lab Date           | Lab Topic                 |
 |------|--------------|-------------------------------------|--------------------|---------------------------|
-| 1    | 8/27/2025    | Intro                               | N/A                |                           |
+| 1    | 8/27/2025    | [Intro](./lectures/lecture1/)       | N/A                |                           |
 | 2    | Labor Day    |                                     | 9/3/2025           | Setting up ROS            |
 | 3    | 9/8/2025     | Distinguishing Development Features | 9/10/2025          | ROS                       |
 | 4    | 9/15/2025    | Software Machinery + Quiz 1         | 9/17/2025          | Types & Machines          |
