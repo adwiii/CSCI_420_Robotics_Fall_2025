@@ -207,16 +207,12 @@ To do this, enter the following command into Terminal 1:
 ros2 node list -a
 ```
 
-The terminal should output something similar to what you see in the picture below:
+The terminal should output something similar to the following:
 
-<div class="columns is-centered">
-    <div class="column is-centered is-8">
-        <figure class="image is-16by9">
-        <img src="../images/lab1/install3.png">
-        </figure>
-    </div>
-</div>
-
+```bash
+root@ros_docker:~/csci_420_robotics_labs/lab1_ws# ros2 node list -a
+/_ros2cli_daemon_0_a1e0d230bf104e4097e2a23f8a4bfce9
+```
 
 ---- 
 # Checkpoint 1 [Self-Check]
