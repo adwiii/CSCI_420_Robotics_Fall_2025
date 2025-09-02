@@ -6,3 +6,5 @@
 - name: Labs
   link: /#
   dropdown:
+    - name: 1 - Set up and basic ROS
+      link: /labs/lab1/

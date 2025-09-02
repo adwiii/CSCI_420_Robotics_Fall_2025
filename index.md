@@ -20,7 +20,7 @@ Developing software for robot systems is challenging as they must sense, represe
 
 # Office Hours
 * Trey Woodlief: Tuesdays 10am-11am, Wednesdays 5pm-6pm, and Thursdays 2pm-3pm at McGlothlin-Street Hall 135 and by appointment.
-* Fahmida Hossain: TBD
+* Fahmida Hossain: Fridays 10am–11am at McGlothlin-Street Hall 002
 
 # Prerequisites
 CSCI 303 or CSCI 304 or instructor permission.
