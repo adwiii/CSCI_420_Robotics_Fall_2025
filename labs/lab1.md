@@ -54,7 +54,7 @@ The second part of the lab aims at teaching you the basics of building ROS-based
 
 # Getting a Machine with ROS
 ## Why Docker
-ROS is mainly developed on the Linux-Ubuntu operating system, and to build the labs for this course you will need to have access to an Ubuntu environment. If you were to work day-to-day in ROS, you would likely have a whole desktop work machine that only runs Ubuntu (and several of the TAs do!), but you may be using another operating system like macOS or Windows and not have the ability to change your system operating system easily.
+ROS is mainly developed on the Linux-Ubuntu operating system, and to build the labs for this course you will need to have access to an Ubuntu environment. If you were to work day-to-day in ROS, you would likely have a whole desktop work machine that only runs Ubuntu, but you may be using another operating system like macOS or Windows and not have the ability to change your system operating system easily.
 Docker allows us to solve this problem by creating an isolated Ubuntu environment that we can run *from inside another operating system*. Although we will use Docker to create and configure an Ubuntu environment, Docker can be used for many different operating systems and configurations.  
 More specifically, Docker allows us to create [`images`](https://docs.docker.com/glossary/#image), a blueprint that tells Docker exactly how we need the Ubuntu system configured. This is especially useful in this case, because the teaching staff can guarantee that each student's environment is exactly the same; more generally, any time you need to make sure you have a repeatable, consistent environment, Docker can help. Docker then lets us use these images to build [`containers`](https://docs.docker.com/glossary/#container) that we can run, starting the Ubuntu system.
 You can think of this as a small virtual machine running inside of your machine. For more information about Docker, refer to their documentation [here](https://docs.docker.com/get-started/), though we will explain the necessary commands you need for the labs as we go.
@@ -68,7 +68,7 @@ We will start by installing Docker for your machine. See the below section corre
 Follow the instructions [here](https://docs.docker.com/desktop/install/linux-install/).
 
 ### Mac
-Follow the instructions [here](https://docs.docker.com/desktop/install/mac-install/). Note that if you are using one of the new M1 or M2 macs, you will need to select the appropriate option `Mac with Apple chip`.
+Follow the instructions [here](https://docs.docker.com/desktop/install/mac-install/). Note that if you are using one of the new Apple Silicon macs, you will need to select the appropriate option `Mac with Apple chip`.
 
 ### Windows
 Follow the instructions [here](https://docs.docker.com/desktop/install/windows-install/).
@@ -210,7 +210,7 @@ ros2 node list -a
 The terminal should output something similar to the following:
 
 ```bash
-root@ros_docker:~/csci_420_robotics_labs/lab1_ws# ros2 node list -a
+root@ros_docker:~# ros2 node list -a
 /_ros2cli_daemon_0_a1e0d230bf104e4097e2a23f8a4bfce9
 ```
 
@@ -321,7 +321,7 @@ The `main_controller` which commands the `rocket_engine` to go at certain veloci
 >>> [INFO] [...]: Rocket Ready for Countdown
 ```
 
-Now let's get ready to launch the rocket! Start the countdown using Terminal 4.
+Now let's get ready to launch the rocket! Start the countdown using Terminal 3.
 
 ### Terminal 3:
 
@@ -369,7 +369,7 @@ Using this information, we can start to understand some of the system organizati
 
 ## Roslaunch
 
-Having to run many different software components is common in robotics, but doing it manually by setting terminals as we have done is not practical, especially when deploying a system requires hundreds of processes to be run in specific ways.  Another way that ROS helps to address system complexity is by making it easier to deploy multiple software components through **launch files**.  Another benefit of a ROS launch file is that it automatically checks if a `roscore` is running, and if not, it starts one.
+Having to run many different software components is common in robotics, but doing it manually by setting terminals as we have done is not practical, especially when deploying a system requires hundreds of processes to be run in specific ways.  Another way that ROS helps to address system complexity is by making it easier to deploy multiple software components through **launch files**.
 
 ### Editing files
 Let's create a launch file to run all the software components of our rocket. First, we will edit the base `rocket.launch` file provided to you. To do this, open the `csci_420_robotics_labs/lab1_ws/src` directory in your preferred IDE. Docker conveniently allows your Ubuntu machine and your host machine to both access the files directly. This means that you can either edit the files directly in Ubuntu, or we recommend using a full-fledged IDE such as [Visual Studio Code](https://code.visualstudio.com/) or [PyCharm](https://www.jetbrains.com/pycharm/) on your host machine. For PyCharm, you can use the community edition, or students are eligible for a [free Educational License](https://www.jetbrains.com/community/education/#students) that provides access to the full commercial suite for free.
@@ -391,7 +391,11 @@ Let's add each of the different software components into the launch file. ROS ca
 <node pkg="rocketship" exec="countdown" name="CountDownNode"></node>
 ```
 
-Take a second to explore what is inside the launch file. By using a launch file, ROS knows to start `roscore` automatically and how to start three software modules (nodes) `rocket_engine`, `main_controller`, and `countdown`. Each of the nodes belongs to the rocketship package (pkg). We want the `main_controller` to output to screen (the terminal). Save the file and go back to your terminal. Let's launch the rocket. Close all terminals and open a new one. To launch the rocket we need to run:
+Take a second to explore what is inside the launch file. By using a launch file, ROS knows to start any necessary background processes automatically and how to start three software modules (nodes) `rocket_engine`, `main_controller`, and `countdown`. Each of the nodes belongs to the rocketship package (pkg). We want the `main_controller` to output to screen (the terminal). Save the file and go back to your terminal. Let's launch the rocket. Press CTRL+C to stop all commands in all terminals, close them and open a new one. 
+
+{% include notification.html message="CAUTION!!! Closing a terminal without pressing CTRL+C to first stop the process can leave extra copies of the node running in the background. Make sure to close them to avoid this!" %}
+
+To launch the rocket we need to run:
 
 ```bash
 cd ~/csci-420-robotics-docker  # edit the location if you did not clone the repository to ~ during Docker Setup
@@ -525,9 +529,9 @@ Take a screenshot of the ROS communication graph.
 
 ## RQT Plot
 
-Previously we displayed data on the terminal using `rostopic echo`. For identifying data patterns or trends, sometimes if helps to visualize the data through plots. To do this, we will use the `rqt_plot` tool that is part of `rqt`.
+Previously we displayed data on the terminal using `ros2 topic echo`. For identifying data patterns or trends, sometimes if helps to visualize the data through plots. To do this, we will use the `rqt_plot` tool that is part of `rqt`.
 
-With the rocket running, start `rqt` in a separate Docker container and check your VNC browser:
+With the rocket running, start `rqt` in a separate terminal and check your VNC browser:
 
 ```bash
 rqt
@@ -553,7 +557,7 @@ To open `rqt_plot` click `Plugins->Visualization->Plot`. You will see output sim
 ----
 # Checkpoint 3
 
-You now have all you need to launch the rocket and plot the data passed between the different software components. Now plot both the command velocity (`/cmd_vel/data`) and the velocity sensor data (type in `/sensor_vel/data` and hit the + button again) using `rqt_plot`. Relaunch the rocket's software so that you can see the velocity from the countdown until it reaches maximum velocity. **Take a screenshot of your graph**.
+You now have all you need to launch the rocket and plot the data passed between the different software components. Now plot both the command velocity (`/cmd_vel/data`) and the velocity sensor data (clear the field, type in `/sensor_vel/data`, and hit the + button again) using `rqt_plot`. Relaunch the rocket's software so that you can see the velocity from the countdown until it reaches maximum velocity. **Take a screenshot of your graph**.
 
 <div class="columns is-centered">
     <div class="column is-6">
@@ -613,14 +617,14 @@ You will notice that **nothing happens.** Let's investigate why. Open a new Dock
 cd ~/csci-420-robotics-docker  # edit the location if you did not clone the repository to ~ during Docker Setup
 # Connect to the Docker container
 docker compose exec ros bash
-rostopic echo /launch_abort
+ros2 topic echo /launch_abort
 >>> data: False
 >>> ---
 >>> data: False
 >>> ...
 ```
 
-This explains why it did nothing! We were sending `/launch_abort` message set to **false**. So we are **telling the robot not to abort!** To send true abort messages, check the checkbox next to the word `False`, or double-click on the word `False` and type `True`. Note that you might have to click the `>` triangle to the left to make that option visible. Once you have done that, you should see the following appear on your rocketship terminal:
+This explains why it did nothing! We were sending `/launch_abort` message set to **false**. So we are **telling the robot not to abort!** To send true abort messages, double-click on the word `False` and type `True`. Note that you might have to click the `>` triangle to the left to make that option visible. Once you have done that, you should see the following appear on your rocketship terminal:
 
 ```bash
 >>> [ INFO] [...]: Abort Failed
