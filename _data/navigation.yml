@@ -3,6 +3,8 @@
   dropdown:
     - name: 1 - Introduction
       link: /lectures/lecture1/
+    - name: 2 - Robots Cyber and Physical
+      link: /lectures/lecture2/
 - name: Labs
   link: /#
   dropdown:
