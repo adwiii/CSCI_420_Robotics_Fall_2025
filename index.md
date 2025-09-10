@@ -31,8 +31,8 @@ CSCI 303 or CSCI 304 or instructor permission.
 | Week | Lecture Date | Lecture Topic                       | Lab Date           | Lab Topic                 |
 |------|--------------|-------------------------------------|--------------------|---------------------------|
 | 1    | 8/27/2025    | [Intro](./lectures/lecture1/)       | N/A                |                           |
-| 2    | Labor Day    |                                     | 9/3/2025           | Setting up ROS            |
-| 3    | 9/8/2025     | Distinguishing Development Features | 9/10/2025          | ROS                       |
+| 2    | Labor Day    |                                     | 9/3/2025           | [Setting up ROS](./labs/lab1)            |
+| 3    | 9/8/2025     | [Distinguishing Development Features](./lectures/lecture2/) | 9/10/2025          | [ROS](./labs/lab2)                       |
 | 4    | 9/15/2025    | Software Machinery + Quiz 1         | 9/17/2025          | Types & Machines          |
 | 5    | 9/22/2025    | Robot & World Types                 | 9/24/2025          | Sensors & Noise           |
 | 6    | 9/29/2025    | Abstractions & Perception + Quiz 2  | 10/1/2025          | Perception                |

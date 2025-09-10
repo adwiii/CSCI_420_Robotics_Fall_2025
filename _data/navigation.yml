@@ -10,3 +10,5 @@
   dropdown:
     - name: 1 - Set up and basic ROS
       link: /labs/lab1/
+    - name: 2 - ROS processes, communication, and simulation environment
+      link: /labs/lab2/
