@@ -5,6 +5,8 @@
       link: /lectures/lecture1/
     - name: 2 - Robots Cyber and Physical
       link: /lectures/lecture2/
+    - name: 3 - Features of Software Development for Robots
+      link: /lectures/lecture3/
 - name: Labs
   link: /#
   dropdown:
