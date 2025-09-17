@@ -14,3 +14,5 @@
       link: /labs/lab1/
     - name: 2 - ROS processes, communication, and simulation environment
       link: /labs/lab2/
+    - name: 3 - Representing States, System Parameterization, and Services
+      link: /labs/lab3/
