@@ -482,7 +482,7 @@ The last thing we need to do is to change our launch file so that we can run eac
 ...
         <!--From Lab 2-->
 <node name="keyboard_manager_node" pkg="simple_control" exec="keyboard_manager" output="screen"/>
-<node name="keyboard" pkg="keyboard" type="keyboard"/>
+<node name="keyboard" pkg="keyboard" exec="keyboard"/>
         <!-- To be added-->
         ...
 ```
