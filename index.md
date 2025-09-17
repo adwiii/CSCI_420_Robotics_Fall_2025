@@ -28,23 +28,23 @@ CSCI 303 or CSCI 304 or instructor permission.
 
 # Tentative Schedule
 
-| Week | Lecture Date | Lecture Topic                       | Lab Date           | Lab Topic                 |
-|------|--------------|-------------------------------------|--------------------|---------------------------|
-| 1    | 8/27/2025    | [Intro](./lectures/lecture1/)       | N/A                |                           |
-| 2    | Labor Day    |                                     | 9/3/2025           | [Setting up ROS](./labs/lab1)            |
-| 3    | 9/8/2025     | [Distinguishing Development Features](./lectures/lecture2/) | 9/10/2025          | [ROS](./labs/lab2)                       |
-| 4    | 9/15/2025    | Software Machinery + Quiz 1         | 9/17/2025          | Types & Machines          |
-| 5    | 9/22/2025    | Robot & World Types                 | 9/24/2025          | Sensors & Noise           |
-| 6    | 9/29/2025    | Abstractions & Perception + Quiz 2  | 10/1/2025          | Perception                |
-| 7    | 10/6/2025    | LLMs in Robotics                    | 10/8/2025          | Guest Speaker             |
-| 8    | 10/13/2025   | Controlling your Robot              | 10/15/2025         | Ethics                    |
-| 9    | 10/20/2025   | Tradeoffs in Planning + Quiz 3      | 10/22/2025         | Control & Testing         |
-| 10   | 10/27/2025   | Localization & Navigation           | 10/29/2025         | Mapping & Motion Planning |
-| 11   | 11/3/2025    | Overloading & Transformations       | 11/5/2025          | Pose Transformations      |
-| 12   | 11/10/2025   | Specs, V&V, Safety + Quiz 4         | 11/12/2025         | Specifying Robots         |
-| 13   | 11/17/2025   | Robot Design                        | 11/19/2025         | Project Overview          |
-| 14   | 11/24/2025   | Project Work (Remote Office Hours)  | Thanksgiving Break |                           |
-| 15   | 12/1/2025    | Project Presentations               | 12/3/2025          | Project Presentations     |
+| Week | Lecture Date | Lecture Topic                                               | Lab Date           | Lab Topic                        |
+|------|--------------|-------------------------------------------------------------|--------------------|----------------------------------|
+| 1    | 8/27/2025    | [Intro](./lectures/lecture1/)                               | N/A                |                                  |
+| 2    | Labor Day    |                                                             | 9/3/2025           | [Setting up ROS](./labs/lab1)    |
+| 3    | 9/8/2025     | [Distinguishing Development Features](./lectures/lecture2/) | 9/10/2025          | [ROS](./labs/lab2)               |
+| 4    | 9/15/2025    | [Software Machinery](./lectures/lecture2/) + Quiz 1                             | 9/17/2025          | [Types & Machines](./labs/lab3/) |
+| 5    | 9/22/2025    | Robot & World Types                                         | 9/24/2025          | Sensors & Noise                  |
+| 6    | 9/29/2025    | Abstractions & Perception + Quiz 2                          | 10/1/2025          | Perception                       |
+| 7    | 10/6/2025    | LLMs in Robotics                                            | 10/8/2025          | Guest Speaker                    |
+| 8    | 10/13/2025   | Controlling your Robot                                      | 10/15/2025         | Ethics                           |
+| 9    | 10/20/2025   | Tradeoffs in Planning + Quiz 3                              | 10/22/2025         | Control & Testing                |
+| 10   | 10/27/2025   | Localization & Navigation                                   | 10/29/2025         | Mapping & Motion Planning        |
+| 11   | 11/3/2025    | Overloading & Transformations                               | 11/5/2025          | Pose Transformations             |
+| 12   | 11/10/2025   | Specs, V&V, Safety + Quiz 4                                 | 11/12/2025         | Specifying Robots                |
+| 13   | 11/17/2025   | Robot Design                                                | 11/19/2025         | Project Overview                 |
+| 14   | 11/24/2025   | Project Work (Remote Office Hours)                          | Thanksgiving Break |                                  |
+| 15   | 12/1/2025    | Project Presentations                                       | 12/3/2025          | Project Presentations            |
 
 ## Important Dates:
 * Labor day (no class): September 1

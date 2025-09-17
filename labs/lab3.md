@@ -83,20 +83,20 @@ Once you've created the new node, you must update the `~/csci_420_robotics_labs/
 Old:
 ```python3
     entry_points={
-        'console_scripts': [
-            'keyboard_manager = simple_control.keyboard_manager:main'
-        ],
-    },
+    'console_scripts': [
+        'keyboard_manager = simple_control.keyboard_manager:main'
+    ],
+},
 ```
 
 New:
 ```python3
     entry_points={
-        'console_scripts': [
-            'keyboard_manager = simple_control.keyboard_manager:main',
-            'geofence_and_mission = simple_control.geofence_and_mission:main'
-        ],
-    },
+    'console_scripts': [
+        'keyboard_manager = simple_control.keyboard_manager:main',
+        'geofence_and_mission = simple_control.geofence_and_mission:main'
+    ],
+},
 ```
 
 {% include notification.html
@@ -227,7 +227,7 @@ class GeofenceAndMission(Node):
 
         # Start the drone a little bit off the ground
         self.goal_cmd.z = 3.0
-        
+
         # TO BE COMPLETED FOR CHECKPOINT 5
         # TODO: Create the Toggle_Geofence service object, create the handler, etc.
         self.geofence_on = True  # use this variable later
@@ -530,7 +530,7 @@ Expected output
 The list of available topics should look as shown above. As you become more familiar with robotics in ROS, you will start to work with a set of common message types. This was purposefully done by the ROS developers to try and keep a set of standard messages and thus increase compatibility between different nodes, and allow for faster development.
 
 One of the standard ROS message types is `PoseStamped` which contains both the robot's pose, and information about how that pose was calculated.
-A pose represents a robot's position and orientation. 
+A pose represents a robot's position and orientation.
 You will notice a topic called `/uav/sensors/gps`.
 Let's identify what this topic is publishing and what message type it is. First, let's see if this is the topic we want. Echo the topic:
 
@@ -839,7 +839,7 @@ The first service we will be implementing will allow us to "calibrate" the drone
 
 Unlike topics that use a publish-subscribe architecture, services use a request-reply architecture. This interaction is defined by a pair of messages, one for the request and one for the reply. To declare this pair of messages, we need to build a service definition file. These service definition files are declared by us using ROS message types. Our service's request will be a boolean value from the `std_msgs` library that describes whether the pressure sensor should be zeroed. Our service reply is a float value from the `std_msgs` library that contains the current baseline pressure reading.
 
-Unlike topic messages, there are no class libraries for service types. This is because services are dynamic and build upon the existing ROS message types. Due to this, we need to 1) create the service definition file and 2) configure Catkin to build the service definition file. A similar process is done when you want to create custom message types used for topics.
+Unlike topic messages, there are no class libraries for service types. This is because services are dynamic and build upon the existing ROS message types. Due to this, we need to 1) create the service definition file and 2) configure ROS to build the service definition file. A similar process is done when you want to create custom message types used for topics.
 
 Service definition files are typically put in a directory called `srv`.
 
@@ -1034,7 +1034,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-## Find catkin and any catkin packages
+## Find necessary packages
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
@@ -1061,27 +1061,27 @@ Replace the `package.xml file as follows`
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>simple_control</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="root@todo.todo">root</maintainer>
-  <license>TODO: License declaration</license>
+    <name>simple_control</name>
+    <version>0.0.0</version>
+    <description>TODO: Package description</description>
+    <maintainer email="root@todo.todo">root</maintainer>
+    <license>TODO: License declaration</license>
 
-  <test_depend>ament_copyright</test_depend>
-  <test_depend>ament_flake8</test_depend>
-  <test_depend>ament_pep257</test_depend>
-  <test_depend>ament_xmllint</test_depend>
-  <test_depend>python3-pytest</test_depend>
+    <test_depend>ament_copyright</test_depend>
+    <test_depend>ament_flake8</test_depend>
+    <test_depend>ament_pep257</test_depend>
+    <test_depend>ament_xmllint</test_depend>
+    <test_depend>python3-pytest</test_depend>
 
-  <buildtool_depend>ament_cmake_ros</buildtool_depend>
-  <buildtool_depend>ament_cmake_python</buildtool_depend>
-  <depend>rclcpp</depend>
+    <buildtool_depend>ament_cmake_ros</buildtool_depend>
+    <buildtool_depend>ament_cmake_python</buildtool_depend>
+    <depend>rclcpp</depend>
 
-  <!-- TODO: Add service pieces here-->
+    <!-- TODO: Add service pieces here-->
 
-  <export>
-    <build_type>ament_cmake</build_type>
-  </export>
+    <export>
+        <build_type>ament_cmake</build_type>
+    </export>
 </package>
 ```
 
