@@ -229,7 +229,7 @@ class GeofenceAndMission(Node):
         self.goal_cmd.z = 3.0
 
         # TO BE COMPLETED FOR CHECKPOINT 5
-        # TODO: Create the Toggle_Geofence service object, create the handler, etc.
+        # TODO: Create the ToggleGeofence service object, create the handler, etc.
         self.geofence_on = True  # use this variable later
 
         # Keeps track of whether the goal  position was changed or not
@@ -1011,7 +1011,7 @@ If everything was implemented correctly after running the command in terminal 3,
 
 # Implementing your own service
 
-Now use what you have learned to implement a service that will toggle the geofence area created during Checkpoint 2 on and off. Inside the `geofence_and_mission` node in the `simple_control` package, create a service `Toggle_Geofence` that has its inputs and outputs defined in the service definition file `Toggle_Geofence.srv`. This service should take in a **boolean input** parameter called `geofence_on` and **output a boolean** parameter `success`. The service should allow the user to turn the geofence area on or off and should return whether the call was a success or not (**note**: for our implementation it should always succeed in turning the geofence area on or off; however, we could imagine a different implementation that will not let you engage the geofence unless the quadrotor is already inside the geofence).
+Now use what you have learned to implement a service that will toggle the geofence area created during Checkpoint 2 on and off. Inside the `geofence_and_mission` node in the `simple_control` package, create a service `ToggleGeofence` that has its inputs and outputs defined in the service definition file `ToggleGeofence.srv`. This service should take in a **boolean input** parameter called `geofence_on` and **output a boolean** parameter `success`. The service should allow the user to turn the geofence area on or off and should return whether the call was a success or not (**note**: for our implementation it should always succeed in turning the geofence area on or off; however, we could imagine a different implementation that will not let you engage the geofence unless the quadrotor is already inside the geofence).
 
 
 ### Converting from a pure Python package to C++
@@ -1115,7 +1115,7 @@ Congratulations, you are done with Lab 3!
     1. Fly to waypoints inside the geofence area using commands send via the keyboard.
     2. Reject waypoints that are outside the geofence area.
     3. You should be able to explain how you implemented the verification state.
-5. Turn the geofence area on or off using the `Toggle_Geofence` service.
+5. Turn the geofence area on or off using the `ToggleGeofence` service.
     1. Show that after your geofence area is turned off, you can fly to a point outside the geofence area.
 
 ---
