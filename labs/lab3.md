@@ -437,10 +437,10 @@ class KeyboardManager(Node):
             self.pos.y = self.pos.y + np.sin(np.pi/2)
             # Right
         if self.key_code == Key.KEY_RIGHT:
-            self.pos.x = self.pos.x - np.sin(3*np.pi/2)
+            self.pos.x = self.pos.x + np.sin(3*np.pi/2)
             # Down
         if self.key_code == Key.KEY_DOWN:
-            self.pos.y = self.pos.y - np.cos(np.pi)
+            self.pos.y = self.pos.y + np.cos(np.pi)
 
 
         # Publish the position
@@ -1087,6 +1087,14 @@ Replace the `package.xml file as follows`
 
 #### Clean up remaining items
 Delete the `setup.cfg` and `setup.py` files. In the `flightcontroller/launch/fly.launch` file, the Python files must now be referenced using their file path, e.g., `keyboard_manager.py` instead of `keybaord_manager`.
+
+#### Rename the folder
+Rename the `simple_control/simple_control` folder to `simple_control/src`.
+
+```bash
+cd ~/csci_420_robotics_labs/lab3_ws/src/simple_control/
+mv ./simple_control ./src
+```
 
 ---
 
