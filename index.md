@@ -33,8 +33,8 @@ CSCI 303 or CSCI 304 or instructor permission.
 | 1    | 8/27/2025    | [Intro](./lectures/lecture1/)                               | N/A                |                                  |
 | 2    | Labor Day    |                                                             | 9/3/2025           | [Setting up ROS](./labs/lab1)    |
 | 3    | 9/8/2025     | [Distinguishing Development Features](./lectures/lecture2/) | 9/10/2025          | [ROS](./labs/lab2)               |
-| 4    | 9/15/2025    | [Software Machinery](./lectures/lecture2/) + Quiz 1                             | 9/17/2025          | [Types & Machines](./labs/lab3/) |
-| 5    | 9/22/2025    | Robot & World Types                                         | 9/24/2025          | Sensors & Noise                  |
+| 4    | 9/15/2025    | [Software Machinery](./lectures/lecture3/) + Quiz 1         | 9/17/2025          | [Types & Machines](./labs/lab3/) |
+| 5    | 9/22/2025    | [Sensors & Noise Management](./lectures/lecture4)           | 9/24/2025          | [Sensors & Noise](./labs/lab4)   |
 | 6    | 9/29/2025    | Abstractions & Perception + Quiz 2                          | 10/1/2025          | Perception                       |
 | 7    | 10/6/2025    | LLMs in Robotics                                            | 10/8/2025          | Guest Speaker                    |
 | 8    | 10/13/2025   | Controlling your Robot                                      | 10/15/2025         | Ethics                           |
