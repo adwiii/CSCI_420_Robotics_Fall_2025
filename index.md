@@ -35,8 +35,8 @@ CSCI 303 or CSCI 304 or instructor permission.
 | 3    | 9/8/2025     | [Distinguishing Development Features](./lectures/lecture2/) | 9/10/2025          | [ROS](./labs/lab2)               |
 | 4    | 9/15/2025    | [Software Machinery](./lectures/lecture3/) + Quiz 1         | 9/17/2025          | [Types & Machines](./labs/lab3/) |
 | 5    | 9/22/2025    | [Sensors & Noise Management](./lectures/lecture4)           | 9/24/2025          | [Sensors & Noise](./labs/lab4)   |
-| 6    | 9/29/2025    | Abstractions & Perception + Quiz 2                          | 10/1/2025          | Perception                       |
-| 7    | 10/6/2025    | LLMs in Robotics                                            | 10/8/2025          | Guest Speaker                    |
+| 6    | 9/29/2025    | Abstractions & Perception                                   | 10/1/2025          | Perception                       |
+| 7    | 10/6/2025    | LLMs in Robotics  + Quiz 2                                  | 10/8/2025          | Guest Speaker                    |
 | 8    | 10/13/2025   | Controlling your Robot                                      | 10/15/2025         | Ethics                           |
 | 9    | 10/20/2025   | Tradeoffs in Planning + Quiz 3                              | 10/22/2025         | Control & Testing                |
 | 10   | 10/27/2025   | Localization & Navigation                                   | 10/29/2025         | Mapping & Motion Planning        |
