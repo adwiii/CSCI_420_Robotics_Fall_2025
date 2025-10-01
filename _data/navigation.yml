@@ -9,6 +9,8 @@
       link: /lectures/lecture3/
     - name: 4 - Sensors and Noise
       link: /lectures/lecture4/
+    - name: 5 - Perception
+      link: /lectures/lecture5/
 - name: Labs
   link: /#
   dropdown:
@@ -20,3 +22,5 @@
       link: /labs/lab3/
     - name: 4 - Sensors, Visualization, Error Correction
       link: /labs/lab4/
+    - name: 5 - Perception
+      link: /labs/lab5/
