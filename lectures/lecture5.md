@@ -1,6 +1,6 @@
 ---
-title: Lecture 4 - Sensors and Noise Management
-subtitle: Posted 9/24
+title: Lecture 5 - Perception
+subtitle: Posted 10/1
 layout: page
 
 ---
@@ -9,6 +9,6 @@ layout: page
 
 <figure class="image is-16by9">
     <iframe class="has-ratio" frameborder="0" scrolling="yes" width="640" height="360"
-        src="../CSCI_420_Sensors_and_Noise_Management.pdf">
+        src="../CSCI_420_Perception.pdf">
     </iframe>
 </figure>
