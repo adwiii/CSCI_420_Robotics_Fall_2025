@@ -136,7 +136,7 @@ Let's now use the downfacing camera to identify when an animal is in the picture
 The 3 functions you will need to implement are in the `marine_life_detection.py` file, inside the `perception` package. To aid in developing this class, we have provided a debug script,`debug_detection.py`, which calls these functions using sample images. Thus, for debugging your code, you can run the command:
 
 ```bash
-cd ~/csci_420_robotics_labs/lab5_ws/src/perception/src
+cd ~/csci_420_robotics_labs/lab5_ws/src/perception/perception
 python debug_detection.py
 ```
 
@@ -313,7 +313,7 @@ Below is the output of the unit tests if all tests passed:
 
 # Checkpoint 2
 
-Implement functions in the `marine_life_detection.py` class located in the `perception` package. Remember, an easy way to debug your code is to use `python debug_detection.py` when in the `perception/src` directory.  Once you are sure your code is working, test it using `test_detection.py` when in the `perception/src` directory.
+Implement functions in the `marine_life_detection.py` class located in the `perception` package. Remember, an easy way to debug your code is to use `python debug_detection.py` when in the `perception/perception` directory.  Once you are sure your code is working, test it using `test_detection.py` when in the `perception/perception` directory.
 
 1. Showcase that your functions work correctly by running the unit tests.
 2. What other technique could you use to achieve similar results?
