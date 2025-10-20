@@ -38,7 +38,7 @@ CSCI 303 or CSCI 304 or instructor permission.
 | 6    | 9/29/2025    | [Abstractions & Perception](./lectures/lecture5)            | 10/1/2025          | [Perception](./labs/lab5)        |
 | 7    | 10/6/2025    | [LLMs in Robotics](./lectures/lecture6)  + Quiz 2           | 10/8/2025          | Guest Speaker                    |
 | 8    | 10/13/2025   | [Controlling your Robot](./lectures/lecture7)               | 10/15/2025         | [Ethics](./labs/labE)            |
-| 9    | 10/20/2025   | Tradeoffs in Planning + Quiz 3                              | 10/22/2025         | Control & Testing                |
+| 9    | 10/20/2025   | [Tradeoffs in Planning](./lectures/lecture8) + Quiz 3       | 10/22/2025         | Control & Testing                |
 | 10   | 10/27/2025   | Localization & Navigation                                   | 10/29/2025         | Mapping & Motion Planning        |
 | 11   | 11/3/2025    | Overloading & Transformations                               | 11/5/2025          | Pose Transformations             |
 | 12   | 11/10/2025   | Specs, V&V, Safety + Quiz 4                                 | 11/12/2025         | Specifying Robots                |

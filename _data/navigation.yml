@@ -15,6 +15,8 @@
       link: /lectures/lecture6/
     - name: 7 - Controls
       link: /lectures/lecture7/
+    - name: 8 - Tradeoffs in Planning
+      link: /lectures/lecture8/
 - name: Labs
   link: /#
   dropdown:
