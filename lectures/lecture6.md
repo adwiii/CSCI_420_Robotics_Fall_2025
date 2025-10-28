@@ -5,7 +5,7 @@ layout: page
 
 ---
 
-## Lecture Slides: [download](../CSCI_420_Introduction.pdf)
+## Lecture Slides: [download](../CSCI_420_LLMs.pdf)
 
 <figure class="image is-16by9">
     <iframe class="has-ratio" frameborder="0" scrolling="yes" width="640" height="360"
