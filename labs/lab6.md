@@ -184,7 +184,7 @@ Now that we have a map and understand how it is represented, we will connect the
 
 ```xml
 <!-- Path Planner -->
-<node name="TODO" pkg="TODO" type="TODO" />
+<node name="TODO" pkg="TODO" exec="TODO" />
 <!-- Map Server -->
 <node pkg="nav2_map_server" exec="map_server" name="map_server" output="screen">
     <param name="yaml_filename" value="$(find-pkg-share flightcontroller)/maps/map_medium0.yaml"/>
