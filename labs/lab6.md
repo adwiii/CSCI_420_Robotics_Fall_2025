@@ -114,6 +114,7 @@ Reading the first line from this wiki we see that this node is what we need: "th
 The first thing we need to do is make the `map_server` node available to our project. To do that we can install the pre-compiled version of the `map_server` by running the command:
 
 ```bash
+sudo apt update
 sudo apt install ros-kilted-navigation2 -y
 sudo apt install ros-kilted-nav2-bringup -y
 sudo apt install imagemagick -y
