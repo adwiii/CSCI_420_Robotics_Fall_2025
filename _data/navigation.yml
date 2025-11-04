@@ -17,8 +17,10 @@
       link: /lectures/lecture7/
     - name: 8 - Tradeoffs in Planning
       link: /lectures/lecture8/
-    - name: 8 - Planning Models over Graphs
+    - name: 9 - Planning Models over Graphs
       link: /lectures/lecture9/
+    - name: 10 - Transformations
+      link: /lectures/lecture10/
 - name: Labs
   link: /#
   dropdown:
