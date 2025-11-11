@@ -41,7 +41,7 @@ CSCI 303 or CSCI 304 or instructor permission.
 | 9    | 10/20/2025   | [Tradeoffs in Planning](./lectures/lecture8) + Quiz 3       | 10/22/2025         | Make up                             |
 | 10   | 10/27/2025   | [Graph Navigation](./lectures/lecture9)                     | 10/29/2025         | [Planning](./labs/lab6)             |
 | 11   | 11/3/2025    | [Coordinates & Transformations](./lectures/lecture10)       | 11/5/2025          | [Pose Transformations](./labs/lab7) |
-| 12   | 11/10/2025   | Specs, V&V, Safety + Quiz 4                                 | 11/12/2025         | Specifying Robots                   |
+| 12   | 11/10/2025   | [Specs, V&V, Safety](./lectures/lecture11) + Quiz 4         | 11/12/2025         | Specifying Robots                   |
 | 13   | 11/17/2025   | Robot Design                                                | 11/19/2025         | Project Overview                    |
 | 14   | 11/24/2025   | Project Work (Remote Office Hours)                          | Thanksgiving Break |                                     |
 | 15   | 12/1/2025    | Project Presentations                                       | 12/3/2025          | Project Presentations               |

@@ -21,6 +21,8 @@
       link: /lectures/lecture9/
     - name: 10 - Transformations
       link: /lectures/lecture10/
+    - name: 11 - Specifications and Safety
+      link: /lectures/lecture11/
 - name: Labs
   link: /#
   dropdown:
