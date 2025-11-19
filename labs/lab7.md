@@ -357,10 +357,10 @@ There is noise in the system, so the drone will not always respond exactly to th
 Once the drone reaches the first waypoint, it the program will start trying to send it to the next waypoint, `x=5, y=5`. However, with only a controller for the X dimension, the drone will not be able to reach it. To enable the PID controller for the Y dimension, invoke the debugger as:
 
 ```bash
-python debug_pid.py [[px, ix, dx], [py, iy, dy]]
+python debug_pid.py "[[px, ix, dx], [py, iy, dy]]"
 ```
 
-Where the array now contains separate parameters for the X dimension and the Y dimension. The image below shows the result of running `python debug_pid.py [[0,0,0],[0,0,0]]`. As noted, there is a strong cross-wind in the Y dimension that constantly blows the drone off course. Here, without any control in the Y dimension, the drone is quickly blown off screen.
+Where the array now contains separate parameters for the X dimension and the Y dimension. The image below shows the result of running `python debug_pid.py "[[0,0,0],[0,0,0]]"`. As noted, there is a strong cross-wind in the Y dimension that constantly blows the drone off course. Here, without any control in the Y dimension, the drone is quickly blown off screen.
 
  <div class="columns is-centered">
     <div class="column is-centered is-6">
