@@ -23,6 +23,8 @@
       link: /lectures/lecture10/
     - name: 11 - Specifications and Safety
       link: /lectures/lecture11/
+    - name: 12 - Robot Arch & Design
+      link: /lectures/lecture12/
 - name: Labs
   link: /#
   dropdown:
@@ -42,3 +44,5 @@
       link: /labs/lab6/
     - name: 7 - Transformations
       link: /labs/lab7/
+- name: Project
+  link: /project/project
