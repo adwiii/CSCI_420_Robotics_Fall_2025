@@ -318,9 +318,9 @@ Your project will be evaluated on its ability to meet the following requirements
  3. The drone must report the **shortest path** between its starting location and the dog once found (*Automatically detected*)
 
 There are two milestones for the project: an in class demo and a final code submission.
-In class demos will be held on ***Monday, December 1st and Wednesday, December 3rd***.
+In class demos of the checkpoints will be held on ***Wednesday, December 3rd***. Late submissions of vidoes of the demo will be deducted 10% per day late. Videos can be submitted through Blackboard. The video must clearly show the door opening for Checkpoint 1, and the Occupancy grid for the initial position for Checkpoint 2.
 The final code submission of your zipped `simple_control` package is due ***Monday, December 8th at NOON*** through Blackboard. Only one team member needs to submit. Make sure that both team members' names are in the `simple_control.launch` file.
-Late submissions will be deducted 25% per day late for the final submission.
+Late submissions will be deducted 10% per day late for the final submission until 12/16.
  
 **The final project is worth 20% of your class grade.** The grading breakdown is:
 * 8 points for the in-class demo
@@ -328,7 +328,7 @@ Late submissions will be deducted 25% per day late for the final submission.
     * For opening the door, you may use one of the seeds above where the drone starts adjacent to the door. Show that your drone can open that door. For the final submission your drone must be able to automatically detect and open doors; however, for this demonstration, the location of the door can be hard-coded.
     * For generating the map, show that your solution can build an initial occupancy grid showing the status of the location around the starting position; the drone does not have to move. For example, in the GIF shown in example 2, the drone starts up and identifies the area around the start before it begins moving.
     * While we will aim for live demos, you should come prepared with a video recording as well.
-* 12 points for the code and video submission through Collab
+* 12 points for the code and video submission through Blackboard
   * Submit a video of the drone completing 3 different scenarios of size 23x23 that are not shown above.
   * The code submission will be graded against a suite of scenarios that the teaching staff choose, each of which must pass.
 * 1 Extra Credit point for the fastest solution time in the class on a hidden map chosen by the teaching staff
